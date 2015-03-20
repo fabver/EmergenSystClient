@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+        
+        <style>
+            #fileOutput {
+                margin: 15px auto;
+                border: solid 1px #f4f4f5;
+                width: 150px;
+                height: 150px;
+                background-color: #fff;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                background-image: url('css/images/User.png');
+                overflow: hidden;
+            }
+        </style>
+
+        <script>
+
+            function processFiles(files) {
+                var file = files[0];
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Cuando éste evento se dispara, los datos están ya disponibles.
+                    // Se trata de copiarlos a una área <div> en la página.
+                    $("#fileOutput").css({'backgroundImage' : "url('" + e.target.result + "')"});
+                    console.log(e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+            
+            function movePhoto(e){
+                var x = e.clientX/10 + 'px';
+                var y = e.clientY/10 + 'px';
+                var back = x + " " + y;
+                $('#fileOuput').css({'backgroundPosition' : back});
+            }
+
+        </script>
+        <div id="fileOutput" onmousemove="movePhoto(e);"></div>
+<input id="fileInput" type="file" onchange="processFiles(this.files)">
+
+

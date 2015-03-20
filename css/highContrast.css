@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2014, 19:13:15
+    Author     : Fabver12
+*/
+
+.titleBar{
+    background: #fff;
+    color: #000;
+}
+
+.btnMenu{
+    border-color: #000;
+    background-image: url(../img/bars-black.png);
+    background-color: #fff;
+}
+
+.menuBar{
+    background: #000;
+    color: #fff;
+}
+
+.menu, .menuInv{
+    background: #000;
+    color: #fff;
+}
+
+.optionMenu button{
+    background: #fff;
+    color: #000;
+}
+
+.menuBar button{
+    border-left: 2px #fff solid;
+}
+
+.menuBar button:first-child {
+    border-left: none; 
+}
+
+footer, .footerVis{
+    background: #000;
+    color: #fff;
+}
+
+.btnFooter{
+    background: #fff;
+    color: #000;
+}
+
+.menuBar button{
+    background-color: #000;
+    color: #fff;
+}
+
+    .option1{
+        background-image: url('../img/Acuerdo1-white.png');
+    }
+    
+    .option2{
+        background-image: url('../img/Acuerdo2-white.png');
+    }
+    
+    .option3{
+        background-image: url('../img/Acuerdo3-white.png');
+    }
+    
+    .option4{
+        background-image: url('../img/Acuerdo4-white.png');
+    }
+    
+    .option5{
+        background-image: url('../img/Acuerdo5-white.png');
+    }
+    
+    .option6{
+        background-image: url('../img/Acuerdo6-white.png');
+    }
+    
+    .home, .acuerdo1, .acuerdo2, .acuerdo3, .acuerdo4, .acuerdo5, .acuerdo6{
+        background-color: #fff;
+        color: #000;
+    }
+    
+    li .liTitle{
+       background-color: #000;
+       color: #fff; 
+    }
+    
+    .liContent{
+        background-color: #fff;
+        color: #000;
+    }

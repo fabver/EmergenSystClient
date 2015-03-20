@@ -1,0 +1,160 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2014, 11:24:11
+    Author     : Fabver12
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,700);
+
+html {
+    font-size:1em;
+    font-family: 'Signika Negative', sans-serif;
+    color:#999999;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: 'Signika Negative', sans-serif;
+    font-stretch: ultra-condensed;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    background: #f9f9f9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    //background-color: green;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top:0;
+    left: 0;
+    background-color: #014f8d;
+}
+
+    .titleBar{
+        position: static;
+        width: 100%;
+        height: 45px;
+        margin: 0 0;
+    }
+    
+    .titleHead{
+        position: static;
+        display: inline;
+        float: left;
+        margin: 2.5px;
+        margin-left: 10px; 
+        color: #fff !important;
+    }
+    
+    .btnMenu{
+        position: static;
+        display: inline;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #023a67;
+        background-image: url(images/icons-svg/bars-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        //border: 5px #0163b1 solid;
+        float: right;
+        margin: 5px;
+    }
+    
+    .grupNavBar{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .menuBar{
+        position: static;
+        width: 100%;
+        height: 45px;
+    }
+    
+    .menuBar li{
+        width: 32.6%;
+        height: 99%;
+        background-color: #0163b1;
+        color: white;
+        display: inline;
+        float: left;
+        border-radius: 5px;
+        margin: 0.5%;
+    }
+    
+    .menuBar li:last-child {
+        margin-left: 0;
+    }
+    .menuBar li:first-child {
+        margin-right: 0;
+    }
+    
+    .option1{
+        margin-top: 10px;
+        background-color: #023257;
+        background-image: url('images/icons-svg/home-white.svg');
+    }
+    
+    .option2{
+        margin-top: 10px;
+        background-color: #023257;
+        background-image: url('images/icons-svg/user-white.svg');
+    }
+    
+    .option3{
+        margin-top: 10px;
+        background-color: #023257;
+        background-image: url('images/icons-svg/phone-white.svg');
+    }
+    
+.content{
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.contentComponent{
+    margin: 5%;
+    width: 90%;
+}
+
+.btnHome{
+    position: static;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    //margin: 0 auto;
+    //background-image: url(../img/home-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px rgb(065, 065, 065) solid;
+    //border-style: ridge;
+    margin: 2.5px auto;
+}
+

@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-dic-2014, 14:20:23
+    Author     : Fabver12
+*/
+
+.contentMenu, .contentMenuVis{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.contentMenu{
+    right: -100%;
+    transition-property: right;
+    transition-duration: 0.4s;
+}
+
+.contentMenuVis{
+    right: 0;
+}
+
+    .menu, .menuInv{
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        //background-color: rgb(065, 065, 065);
+        background-color: #014f8d;
+        overflow: auto;
+    }
+    
+    .menu{
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 0.4s;
+    }
+    
+    .menuInv{
+        opacity: 0;
+    }
+    
+        .optionMenu{
+            margin: 5px;
+            width: 280px;
+            height: auto;
+            padding: 5px;
+            //background-color: #333b5b;
+            border-radius: 5px;
+            color: #fff;
+        }
+        
+        .optionMenu h1{
+            text-align: center;
+        }
+        
+        .optionMenu button{
+            width: 100%;
+            height: 30px;
+            background-color: #fff;
+            color: #014f8d;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+        }
+        
+.rangoInv, .rangoVis{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:15px;
+    padding-bottom: 15px;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 65px;
+    margin-top: 5px;
+    width: 80%;
+    height: 20px;
+    bottom: 0px;
+    background-color: #232526;
+    border-radius: 30px;
+/*    -webkit-appearance: slider-vertical*/
+}
+
+.rangoInv{
+    visibility: hidden;
+    opacity: 0;
+    transition-property:  visibility, opacity;
+    transition-duration:  1s;
+}
+
+.rangoVis{ 
+   opacity: 0.7;
+   visibility: visible;
+}
+
+#range{
+    position: relative;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    //visibility: hidden;
+}
+
+footer, .footerVis, .footAcuerdos{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    background: rgb(90,143,86);  //Old browsers 
+    background: -moz-linear-gradient(top,  rgba(90,143,86,1) 0%, rgba(127,202,121,1) 100%);  //FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(90,143,86,1)), color-stop(100%,rgba(127,202,121,1)));  //Chrome,Safari4+ 
+    background: -webkit-linear-gradient(top,  rgba(90,143,86,1) 0%,rgba(127,202,121,1) 100%);  //Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top,  rgba(90,143,86,1) 0%,rgba(127,202,121,1) 100%);  //Opera 11.10+ 
+    background: -ms-linear-gradient(top,  rgba(90,143,86,1) 0%,rgba(127,202,121,1) 100%);  //IE10+ 
+    background: linear-gradient(to bottom,  rgba(90,143,86,1) 0%,rgba(127,202,121,1) 100%);  //W3C 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a8f56', endColorstr='#7fca79',GradientType=0 );  //IE6-9 
+}
+
+footer, .footAcuerdos{
+    bottom: -60px;
+    transition-property: bottom;
+    transition-duration: 0.4s;
+}
+
+.footerVis{
+    bottom: 0;
+}
+    
+.footAcuerdos{
+    background: rgba(0,0,0,0.6);
+}
+
+    .contentButton{
+        position: static;
+        width: 50%;
+        height: 100%;
+        display: inline;
+        float: left;
+    }
+    
+    .btnFooter{
+        width: 96%;
+        height: 40px;
+        background-color: #fff;
+        color: #7FCA79;
+        border-radius: 5px;
+        border: none;
+        margin: 10px 2% 10px 2%;
+    }
+    
+.mensaje{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+}

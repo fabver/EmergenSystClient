@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-jul-2014, 1:43:32
+    Author     : Fabver12
+*/
+
+.btnEmrg{
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 10px outset buttonface !important;
+    //background-image: url(images/EmergenSyst.png);
+    background: radial-gradient(ellipse at center,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: 98%;
+    //background-color: #101010;
+/*    box-shadow: 0px 50px 15px 10px rgba(0,0,0,0.5);*/
+}
+
+.btnEmrg2{
+    background-color: #b62f2f;
+    
+    //font-size: 1.2em;
+/*    //background-image: url(images/icons-svg/other-user-white.svg);
+    background-position: 5px 0;
+    background-repeat: no-repeat;*/
+    //vertical-align: middle;
+}
+
+.iconEmrg2{
+    background-color: #591f1f;
+    background-image: url('images/icons-svg/other-user-white.svg');
+}
+
+.ui-icon-other-user:after {
+	background-image: url(images/icons-svg/other-user-white.svg);
+}
+
+.ui-alt-icon.ui-icon-other-user:after,
+.ui-alt-icon .ui-icon-other-user:after {
+	background-image: url(images/icons-svg/other-user-black.svg);
+}
+
+.ui-nosvg .ui-icon-other-user{
+	background-image: url(images/icons-png/other-user-white.png);
+}
+
+.ui-nosvg .ui-alt-icon.ui-icon-other-user,
+.ui-nosvg .ui-alt-icon .ui-icon-other-user{
+	background-image: url(images/icons-png/other-user-black.png);
+}
+
+.ui-icon-emergency:after {
+	background-image: url(images/btnEmergency1.svg);
+}
+
+/*.ui-nosvg .ui-icon-emergency{
+	background-image: url(images/btnEmergency1.png);
+}*/

@@ -1,0 +1,92 @@
+<link href="css/setlData.css" rel="stylesheet" type="text/css"/>
+<link href="css/collapsible.css" rel="stylesheet" type="text/css"/>
+<div class="contentComponent">
+    <h2>Datos Clínicos</h2>
+    <form name="frmPersona" data-ajax="false">
+        <input type="number" id="txtCed" class="text" placeholder="Digite su cedula" onfocus="cambiar(this);" onblur="validar(this);" required readonly/>
+        <div class="inputs">
+            <ul>
+                <li class="collapsible">
+                    <div class="liTitle">
+                        <span class="iconRight iconCollap"></span>
+                        Enfermedades
+                    </div>
+                    <div class="liContent">
+                        <!--<select name="bEnf" id="bEnf" data-native-menu="false" data-role="slider">
+                            <option value="false">NO</option>
+                            <option value="true">SI</option>
+                        </select>-->
+                        <textarea class="atext" id="enfs" value=""></textarea>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="liTitle">
+                        <span class="iconRight iconCollap"></span>
+                        Cirugías
+                    </div>
+                    <div class="liContent">
+                        <!--<select name="bCir" id="bCir" data-native-menu="false" data-role="slider">
+                            <option value="false">NO</option>
+                            <option value="true">SI</option>
+                        </select>-->
+                        <textarea class="atext" id="cirs" value=""></textarea>
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="liTitle">
+                        <span class="iconRight iconCollap"></span>
+                        Medicamentos
+                    </div>
+                    <div class="liContent">
+                        <!--<select name="bMed" id="bMed" data-native-menu="false" data-role="slider">
+                            <option value="false">NO</option>
+                            <option value="true">SI</option>
+                        </select>-->
+                        <textarea class="atext" id="meds" value=""></textarea> 
+                    </div>
+                </li>
+                <li class="collapsible">
+                    <div class="liTitle">
+                        <span class="iconRight iconCollap"></span>
+                        Alergias
+                    </div>
+                    <div class="liContent">
+                        <!--<select name="bAlg" id="bAlg" data-native-menu="false" data-role="slider">
+                            <option value="false">NO</option>
+                            <option value="true">SI</option>
+                        </select>-->
+                        <textarea class="atext" id="algs" value=""></textarea>
+                    </div>
+                    
+                </li>
+                <li class="collapsible">
+                    <div class="liTitle">
+                        <span class="iconRight iconCollap"></span>
+                        Antecedentes Familiares
+                    </div>
+                    <div class="liContent">
+                        <!--<select name="bAnt" id="bAnt" data-native-menu="false" data-role="slider">
+                            <option value="false">NO</option>
+                            <option value="true">SI</option>
+                        </select>-->
+                        <textarea class="atext" id="ants" value=""></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+    <div class="middleDisplay">
+        <button id="btnCancelar" class="btnCancelar btn">
+            Cancelar
+            <span class="iconLeft iconCancelar"></span>
+        </button>
+    </div>
+    <div class="middleDisplay">
+        <button id="btnGuardar" class="btnGuardar btn">
+            Guardar
+            <span class="iconLeft iconGuardar"></span>
+        </button>
+    </div>
+</div>
+<script src="js/InsertClinicalData.js" type="text/javascript"></script>
+<script src="js/collapsible.js" type="text/javascript"></script>

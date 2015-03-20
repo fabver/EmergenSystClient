@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-ene-2015, 20:41:05
+    Author     : Fabver12
+*/
+
+.btn, .cbx, .text, .atext{
+    width: 95%;
+    height: 35px;
+    margin: 5px 2.5%;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+    //border: 1px buttonface outset;
+    font-size: 1.2em;
+}
+
+.btn{
+    font-size: 1.4em;
+}
+
+.btn, .cbx, .atext{
+    text-align: center;
+    height: 45px;
+}
+
+.cbx, .text, .atext{
+    color: #474747;
+    border: 2px buttonface inset;
+    //padding-left: 5px;
+    //padding-right: 5px;
+}
+
+.atext{
+    text-align: left;
+    height: 50px 
+}
+
+.iconLeft, .iconRight, .iconCenter{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.iconLeft{
+    float: left;
+    margin-left: 10px;
+}
+
+.iconRight{
+    float: right;
+    margin-right: 10px;
+}
+
+.iconCenter{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middleDisplay{
+    display: inline;
+    float: left;
+    width: 50%;
+}
+
+.collapsible{
+    width: 100%;
+    height: auto;
+    //background-color: #ae40e7;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.collapsible .liTitle{
+    width: 100%;
+    height: 37px;
+    background-color: #0163b1;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.collapsible .liContent, li .liContentVis{
+    width: 96%;
+    //background-color: green;
+    //border-radius: 5px;
+    text-align: justify;
+}
+
+.collapsible .liContent{
+    height: 0;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.4s;
+}
+
+.collapsible .liContentVis{
+    height: auto;
+    padding: 2%;
+}
