@@ -6,7 +6,11 @@
 
 $(document).ready(function(){
     $('.content').hide();
-    insertarComponente('inicio.html');
+    if (localStorage.cedula){
+        insertarComponente('inicio.html');
+    }else{
+        insertarComponente('setPersonalData.html');
+    }
     setTimeout(function(){
         $('.content').show();
         $('.mensaje').hide();
@@ -20,24 +24,16 @@ $(document).ready(function(){
     });
     $('.option1').click(function(){
         insertarComponente('inicio.html');
-        //if(!$('.footAcuerdos').hasClass('footerVis')){
-//            $('.footAcuerdos').addClass('footerVis');
-//            $('.content').css('bottom', '60px');
-        //}
     });
     $('.option2').click(function(){
-        insertarComponente('setPersonalData.html');
-        //if(!$('.footAcuerdos').hasClass('footerVis')){
-//            $('.footAcuerdos').addClass('footerVis');
-//            $('.content').css('bottom', '60px');
-        //}
+        if(localStorage.cedula){
+            insertarComponente('getDatos.html'); 
+        }else{
+            insertarComponente('setPersonalData.html');
+        }
     });
     $('.option3').click(function(){
-        insertarComponente('pruebaFoto.html');
-//        if(!$('.footAcuerdos').hasClass('footerVis')){
-//            $('.footAcuerdos').addClass('footerVis');
-//            $('.content').css('bottom', '60px');
-//        }
+        insertarComponente('contactList.html');
     });
     $('.btnHome').click(function(){
         insertarComponente('inicio.html');

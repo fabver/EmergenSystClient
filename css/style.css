@@ -21,6 +21,7 @@ and open the template in the editor.
 
 .btn{
     font-size: 1.4em;
+    border: none;
 }
 
 .btn, .cbx, .atext{
@@ -38,6 +39,24 @@ and open the template in the editor.
 .atext{
     text-align: left;
     height: 50px 
+}
+
+.btnRound{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+}
+
+.btnAdd{
+    background-color: #b62f2f;
+    background-image: url(images/icons-svg/plus-white.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
 }
 
 .iconLeft, .iconRight, .iconCenter{

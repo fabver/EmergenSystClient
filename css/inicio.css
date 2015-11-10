@@ -14,13 +14,17 @@ and open the template in the editor.
     margin: 50px auto;
     border-radius: 50%;
     border: 10px outset buttonface !important;
-    //background-image: url(images/EmergenSyst.png);
+    background-image: url(images/EmergenSyst.png);
     background: radial-gradient(ellipse at center,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C */
     background-repeat: no-repeat;
     background-position: center;
     //background-size: 98%;
     //background-color: #101010;
 /*    box-shadow: 0px 50px 15px 10px rgba(0,0,0,0.5);*/
+}
+
+.btnEmrg:active{
+    background: #d91c1c;
 }
 
 .btnEmrg2{
@@ -31,6 +35,10 @@ and open the template in the editor.
     background-position: 5px 0;
     background-repeat: no-repeat;*/
     //vertical-align: middle;
+}
+
+.btnEmrg2:active{
+    background-color: #d91c1c;
 }
 
 .iconEmrg2{

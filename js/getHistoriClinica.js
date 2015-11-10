@@ -14,7 +14,7 @@ var getDatos = function(cod){
     $('#imgMensaje').attr('src', 'css/images/ajax-loader.gif');
     $.ajax({
         type: "GET",
-        url: urlPrueba,
+        url: url,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         async: true,
@@ -26,6 +26,7 @@ var getDatos = function(cod){
             //alert("Ajax" + error + "-" + jqXHR.responseText+status);
             $('#txtMensaje').html("Error al cargar los datos del usuario.");
             $('#imgMensaje').attr('src', 'css/images/icons-svg/delete-white.svg');
+            console.log(error);
             setTimeout(function(){
                $('.mensaje').hide(); 
             }, 3000);

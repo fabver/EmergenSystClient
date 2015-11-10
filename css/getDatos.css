@@ -63,7 +63,7 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    background-image: url('User.png');
+    background-image: url('images/User.png');
     overflow: hidden;
     border-radius: 5px;
 }

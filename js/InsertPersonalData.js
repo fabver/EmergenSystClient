@@ -51,7 +51,8 @@
             alert(jsonData);
             var ced = $('#txtCed').val();
             if (op){
-                var url = "http://localhost:1919/api/PersonalData/" + $('#txtCed').val();
+                //var url = "http://localhost:1919/api/PersonalData/" + $('#txtCed').val();
+                var url = "http://localhost:8020/api/PersonalData/" + $('#txtCed').val();
                 $.ajax({
                     type: "PUT",
                     url: url,
@@ -71,7 +72,7 @@
                 var urlPrueba = "http://localhost:1919/api/PersonalData";
                 $.ajax({
                     type: "POST",
-                    url: urlPrueba,
+                    url: url,
                     data: jsonData,
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
